@@ -1,43 +1,57 @@
 {
-    "pages": [
-        "src/pages/firstPage/index",
-        "src/pages/CategoryPage/index",
-        "src/pages/shopPage/index",
-        "src/pages/minePage/index"
-    ],
-    "window": {
-        "backgroundTextStyle": "light",
-        "navigationBarBackgroundColor": "#fff",
-        "navigationBarTitleText": "我的小程序",
-        "navigationBarTextStyle": "black"
-    },
-    "tabBar": {
-        "list": [
-            {
-                "iconPath": "src/icons/first.png",
-                "pagePath": "src/pages/firstPage/index",
-                "selectedIconPath": "src/icons/firstpage_selected.png",
-                "text": "首页"
-            },
-            {
-                "iconPath": "src/icons/category.png",
-                "pagePath": "src/pages/CategoryPage/index",
-                "selectedIconPath": "src/icons/category_selected.png",
-                "text": "分类"
-            },{
-                "iconPath": "src/icons/shop.png",
-                "pagePath": "src/pages/shopPage/index",
-                "selectedIconPath": "src/icons/shop_selected.png",
-                "text": "购物车"
-            },
-            {
-                "iconPath": "src/icons/mine.png",
-                "pagePath": "src/pages/minePage/index",
-                "selectedIconPath": "src/icons/mine_selected.png",
-                "text": "我的"
-            }
-        ]
-    },
-    "style": "v2",
-    "sitemapLocation": "sitemap.json"
+  "pages": [
+    "src/pages/firstPage/index",
+    "src/pages/CategoryPage/index",
+    "src/pages/shopPage/index",
+    "src/pages/minePage/index",
+    "src/pages/goodsList/index",
+    "src/pages/goodsDetail/index",
+    "src/pages/cart/index", 
+    "src/pages/collect/index",
+    "src/pages/order/index",
+    "src/pages/search/index",
+    "src/pages/feedback/index",
+    "src/pages/login/index",
+    "src/pages/auth/index",
+    "src/pages/pay/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "我的小程序",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#d81e06",
+    "list": [
+      {
+        "iconPath": "src/icons/first.png",
+        "pagePath": "src/pages/firstPage/index",
+        "selectedIconPath": "src/icons/firstpage_selected.png",
+        "text": "首页"
+      },
+      {
+        "iconPath": "src/icons/category.png",
+        "pagePath": "src/pages/CategoryPage/index",
+        "selectedIconPath": "src/icons/category_selected.png",
+        "text": "分类"
+      },
+      {
+        "iconPath": "src/icons/shop.png",
+        "pagePath": "src/pages/shopPage/index",
+        "selectedIconPath": "src/icons/shop_selected.png",
+        "text": "购物车"
+      },
+      {
+        "iconPath": "src/icons/mine.png",
+        "pagePath": "src/pages/minePage/index",
+        "selectedIconPath": "src/icons/mine_selected.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
 }

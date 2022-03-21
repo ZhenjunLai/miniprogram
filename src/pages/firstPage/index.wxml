@@ -1,2 +1,4 @@
 <!--pages/firstPage/index.wxml-->
 <text>首页</text>
+<view class="iconfont icon-gouwuche"></view>
+
