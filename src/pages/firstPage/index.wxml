@@ -1,4 +1,13 @@
-<!--pages/firstPage/index.wxml-->
-<text>首页</text>
-<view class="iconfont icon-gouwuche"></view>
-
+<!-- pages/firstPage/index.wxml -->
+<view class="pyg_input">
+    <searchInput></searchInput>
+</view>
+<view class="swiper-wrap">
+    <swiper indicator-dots autoplay>
+        <swiper-item wx:for="{{swiperList}}" wx:key="goods_id">
+            <navigator url="">
+                <image src="{{item.image_src}}" mode="widthFix"></image>
+            </navigator>
+        </swiper-item>
+    </swiper>
+</view>

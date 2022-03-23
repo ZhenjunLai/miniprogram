@@ -17,7 +17,7 @@
   ],
   "window": {
     "backgroundTextStyle": "dark",
-    "navigationBarBackgroundColor": "#fff",
+    "navigationBarBackgroundColor": "#eb4450",
     "navigationBarTitleText": "我的小程序",
     "navigationBarTextStyle": "black",
     "enablePullDownRefresh": true
