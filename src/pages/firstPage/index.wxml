@@ -11,3 +11,8 @@
         </swiper-item>
     </swiper>
 </view>
+<view class="cates-wrap">
+    <navigator wx:for="{{catesList}}" wx:key="{{item.name}}" url="">
+        <image class="" src="{{item.image_src}}" mode="widthFix"></image>
+    </navigator>
+</view>

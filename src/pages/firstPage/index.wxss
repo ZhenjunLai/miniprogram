@@ -5,3 +5,13 @@
 .swiper-wrap swiper image {
   width: 100%;
 }
+.cates-wrap {
+  display: flex;
+}
+.cates-wrap navigator {
+  padding: 20rpx;
+  flex: 1;
+}
+.cates-wrap navigator image {
+  width: 100%;
+}
