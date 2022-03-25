@@ -1,1 +1,27 @@
-/* pages/CategoryPage/index.wxss */
+page {
+  height: 100%;
+}
+.cates .cates-wrap {
+  height: calc(100vh - 90rpx);
+  display: flex;
+}
+.cates .cates-wrap .left-scroll-Menus {
+  flex: 2;
+}
+.cates .cates-wrap .left-scroll-Menus .menu-item {
+  font-size: 32rpx;
+  height: 80rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cates .cates-wrap .right-scroll-Menus {
+  flex: 5;
+}
+.cates .cates-wrap .right-scroll-Menus .goods-group .goods-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.cates .cates-wrap .right-scroll-Menus .goods-group .goods-list navigator {
+  width: 33.33%;
+}

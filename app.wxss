@@ -1,29 +1,38 @@
 @import "./styles/iconfont/index.wxss"
-page, view, text, swiper, swiper-item, image, navigator{
+
+page, view, text, swiper, swiper-item, image, navigator {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-page{
-   --themeColor: #eb4450;
-   font-size: 28rpx;
+image {
+    width: 100%;
 }
+
+page {
+    --themeColor: #eb4450;
+    font-size: 28rpx;
+}
+
 @font-face {
-  font-family: 'iconfont';
-  /* Project id 3265857 */
-  src: url('//at.alicdn.com/t/font_3265857_oe0zey514mf.woff2?t=1647876302266') format('woff2'), url('//at.alicdn.com/t/font_3265857_oe0zey514mf.woff?t=1647876302266') format('woff'), url('//at.alicdn.com/t/font_3265857_oe0zey514mf.ttf?t=1647876302266') format('truetype');
+    font-family: 'iconfont';
+    /* Project id 3265857 */
+    src: url('//at.alicdn.com/t/font_3265857_oe0zey514mf.woff2?t=1647876302266') format('woff2'), url('//at.alicdn.com/t/font_3265857_oe0zey514mf.woff?t=1647876302266') format('woff'), url('//at.alicdn.com/t/font_3265857_oe0zey514mf.ttf?t=1647876302266') format('truetype');
 }
+
 .iconfont {
-  font-family: 'iconfont' !important;
-  font-size: 16px;
-  font-style: normal;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    font-family: 'iconfont' !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
+
 .icon-gouwu:before {
-  content: '\e680';
+    content: '\e680';
 }
+
 .icon-gouwuche:before {
-  content: '\e628';
+    content: '\e628';
 }

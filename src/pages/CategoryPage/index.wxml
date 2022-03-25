@@ -1,2 +1,23 @@
-<!--pages/CategoryPage/index.wxml-->
-<text>分类</text>
+<!-- pages/CategoryPage/index.wxml -->
+<view class="cates">
+    <searchInput></searchInput>
+    <view class="cates-wrap">
+        <scroll-view class="left-scroll-Menus" scroll-y="true">
+            <view class="menu-item" wx:for="{{leftCategoryList}}" wx:key="*this">{{item}}</view>
+        </scroll-view>
+        <scroll-view class="right-scroll-Menus" scroll-y="true">
+            <view class="goods-group" wx:for="{{rigtCategoryList}}" wx:for-index="index1" wx:for-item="item1" wx:key="cat_id">
+                <view class="goods-title">{{item1.cat_name}}</view>
+                <view class="goods-list">
+                   <navigator wx:for="{{item1.children}}" 
+                    wx:for-item="item2"
+                    wx:for-index="index2"
+                    wx:key="cat_id">
+                    <image mode="widthFix" src="{{item2.cat_icon}}"></image> 
+                    <view>{{item2.cat_name}}</view>
+                   </navigator>
+                </view>
+            </view>
+        </scroll-view>
+    </view>
+</view>

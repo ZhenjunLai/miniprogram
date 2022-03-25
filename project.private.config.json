@@ -1,0 +1,33 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": [
+        {
+          "name": "分类模式",
+          "pathName": "src/pages/CategoryPage/index",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        }
+      ]
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "分类模式",
+          "pathName": "src/pages/CategoryPage/index",
+          "query": "",
+          "scene": null,
+          "launchMode": "default"
+        }
+      ]
+    }
+  }
+}
