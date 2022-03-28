@@ -14,19 +14,33 @@ page{
                 justify-content: center;
                 align-items: center;
             }
+            .active{
+                color: var(--themeColor);
+                border-left: 5rpx solid currentColor;
+            }
         }
         .right-scroll-Menus{
             flex: 5;
             .goods-group{
                 .goods-title{
-
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 80rpx;
+                    .dilimiter{
+                       color: gray;
+                       padding: 0 10rpx;
+                    }
                 }
                 .goods-list{
                     display: flex;
                     flex-wrap: wrap;
+
                     navigator{
                         width: 33.33%;
+                        text-align: center;
                         image{
+                            width: 50%;
                         }
                         .cat-name{
         

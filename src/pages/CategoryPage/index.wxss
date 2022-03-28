@@ -15,8 +15,22 @@ page {
   justify-content: center;
   align-items: center;
 }
+.cates .cates-wrap .left-scroll-Menus .active {
+  color: var(--themeColor);
+  border-left: 5rpx solid currentColor;
+}
 .cates .cates-wrap .right-scroll-Menus {
   flex: 5;
+}
+.cates .cates-wrap .right-scroll-Menus .goods-group .goods-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80rpx;
+}
+.cates .cates-wrap .right-scroll-Menus .goods-group .goods-title .dilimiter {
+  color: gray;
+  padding: 0 10rpx;
 }
 .cates .cates-wrap .right-scroll-Menus .goods-group .goods-list {
   display: flex;
@@ -24,4 +38,8 @@ page {
 }
 .cates .cates-wrap .right-scroll-Menus .goods-group .goods-list navigator {
   width: 33.33%;
+  text-align: center;
+}
+.cates .cates-wrap .right-scroll-Menus .goods-group .goods-list navigator image {
+  width: 50%;
 }
