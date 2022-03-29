@@ -3,15 +3,11 @@
     <searchInput></searchInput>
     <view class="cates-wrap">
         <scroll-view class="left-scroll-Menus" scroll-y="true">
-            <view class="menu-item {{index===currentIndex?'active':''}}" 
-            wx:for="{{leftCategoryList}}" 
-            wx:key="*this"
-            bindtap="handleItemTap"
-            data-index="{{index}}">
+            <view class="menu-item {{index===currentIndex?'active':''}}" wx:for="{{leftCategoryList}}" wx:key="*this" bindtap="handleItemTap" data-index="{{index}}">
                 {{item}}
             </view>
         </scroll-view>
-        <scroll-view class="right-scroll-Menus" scroll-y="true">
+        <scroll-view scroll-top="{{scrollTop}}" class="right-scroll-Menus" scroll-y="true">
             <view class="goods-group" wx:for="{{rigtCategoryList}}" wx:for-index="index1" wx:for-item="item1" wx:key="cat_id">
                 <view class="goods-title">
                     <text class="dilimiter">/</text>
@@ -19,7 +15,7 @@
                     <text class="dilimiter">/</text>
                 </view>
                 <view class="goods-list">
-                    <navigator wx:for="{{item1.children}}" wx:for-item="item2" wx:for-index="index2" wx:key="cat_id">
+                    <navigator wx:for="{{item1.children}}" wx:for-item="item2" wx:for-index="index2" wx:key="cat_id" url="/src/pages/goodsList/index">
                         <image mode="widthFix" src="{{item2.cat_icon}}"></image>
                         <view>{{item2.cat_name}}</view>
                     </navigator>

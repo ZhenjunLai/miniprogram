@@ -1,0 +1,5 @@
+<!-- components/catesList/catesList.wxml -->
+<view class="tabs-wrap">
+    <view class="title"></view>
+    <view class="tabs" wx:for="{{tabsList}}" wx:key="item.id">{{item.value}}</view>
+</view>

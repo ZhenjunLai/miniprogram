@@ -24,6 +24,13 @@
           "name": "分类模式",
           "pathName": "src/pages/CategoryPage/index",
           "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "商品列表",
+          "pathName": "src/pages/goodsList/index",
+          "query": "",
           "scene": null,
           "launchMode": "default"
         }

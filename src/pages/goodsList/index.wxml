@@ -1,2 +1,3 @@
-<!--src/pages/goodsList/index.wxml-->
-<text>src/pages/goodsList/index.wxml</text>
+<!-- src/pages/goodsList/index.wxml -->
+<searchInput></searchInput>
+<catesList tabsList='{{tabsList}}'></catesList>
