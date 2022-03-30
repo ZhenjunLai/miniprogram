@@ -2,7 +2,7 @@
  * @Author: Zhenjun.Lai
  * @Date: 2022-03-21 23:20:01
  * @LastEditors: Zhenjun.Lai
- * @LastEditTime: 2022-03-29 23:43:20
+ * @LastEditTime: 2022-03-30 23:23:05
  * @Description: 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  * @FilePath: /miniprogram/src/pages/goodsList/index.js
  */
@@ -21,12 +21,12 @@ Page({
       {
         id: 1,
         value: '销量',
-        isActive: true,
+        isActive: false,
       },
       {
         id: 2,
         value: '价格',
-        isActive: true,
+        isActive: false,
       },
     ],
   },
@@ -35,6 +35,16 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {},
+
+  handleBindtapsItemChange(e){
+    const {index} = e.detail
+    const {tabsList}= this.data
+    tabsList.forEach((item,idx) => { idx === index? item.isActive = true : item.isActive = false
+    })
+    this.setData({
+      tabsList
+    })
+  },
 
   /**
    * 生命周期函数--监听页面初次渲染完成

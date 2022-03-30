@@ -1,3 +1,3 @@
 <!-- src/pages/goodsList/index.wxml -->
 <searchInput></searchInput>
-<catesList tabsList='{{tabsList}}'></catesList>
+<catesList tabsList='{{tabsList}}' bindtabsItemChange="handleBindtapsItemChange"></catesList>

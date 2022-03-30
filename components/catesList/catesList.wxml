@@ -1,5 +1,15 @@
 <!-- components/catesList/catesList.wxml -->
 <view class="tabs-wrap">
-    <view class="title"></view>
-    <view class="tabs" wx:for="{{tabsList}}" wx:key="item.id">{{item.value}}</view>
+    <view class="title">
+        <view class="tabs-item {{item.isActive?'active':''}}" 
+        bindtap="handleItemTap"
+        data-index="{{index}}"
+        wx:for="{{tabsList}}" wx:key="item.id">
+            {{item.value}}
+        </view>
+    </view>
+
+    <view class="tabs-content">
+        <slot></slot>
+    </view>
 </view>
