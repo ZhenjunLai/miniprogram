@@ -2,7 +2,7 @@
  * @Author: Zhenjun.Lai
  * @Date: 2022-03-19 19:02:03
  * @LastEditors: Zhenjun.Lai
- * @LastEditTime: 2022-03-29 23:12:23
+ * @LastEditTime: 2022-03-29 23:11:10
  * @Description: 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  * @FilePath: /miniprogram/src/pages/CategoryPage/index.js
  */

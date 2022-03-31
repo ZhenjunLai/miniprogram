@@ -1,3 +1,15 @@
 <!-- src/pages/goodsList/index.wxml -->
 <searchInput></searchInput>
-<catesList tabsList='{{tabsList}}' bindtabsItemChange="handleBindtapsItemChange"></catesList>
+<catesList tabsList='{{tabsList}}' bindtabsItemChange="handleBindtapsItemChange">
+    <view class="goodsList-wrap">
+        <navigator class="good-item" wx:for="{{goodsList}}" wx:key="cat_id">
+            <view class="good-wrap">
+                <image class="" src="{{item.goods_small_logo?item.goods_small_logo:'https://ww1.sinaimg.cn/large/007rAy9hgy1g24by9t530j30i20i2glm.jpg'}}" mode="widthFix"></image>
+            </view>
+            <view class="good-info">
+                <view class="name">{{item.goods_name}}</view>
+                <view class="price">{{item.goods_price}}</view>
+            </view>
+        </navigator>
+    </view>
+</catesList>

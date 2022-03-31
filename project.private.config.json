@@ -30,7 +30,7 @@
         {
           "name": "商品列表",
           "pathName": "src/pages/goodsList/index",
-          "query": "",
+          "query": "cid=5",
           "scene": null,
           "launchMode": "default"
         }
